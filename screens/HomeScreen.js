@@ -1,14 +1,23 @@
 import React from 'react'
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
+import { Image, SafeAreaView, StyleSheet, View } from 'react-native'
 import tw from "tailwind-react-native-classnames";
 
 //rnfes--Shortcut for React Native Functional component with Stylesheet
-
+//https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/2560px-Uber_logo_2018.svg.png
 const HomeScreen = () => {
     return (
-        <SafeAreaView>
-            <View>
-                <Text style={tw`text-red-500 p-10`}>I am HomeScreen</Text>
+        <SafeAreaView style={tw`bg-white h-full`}>
+            <View style={tw`p-5`}>
+                <Image
+                    style={{
+                        width: 100,
+                        height: 100,
+                        resizeMode: "contain",
+                    }}
+                    source={{
+                        uri: "https://links.papareact.com/gzs",
+                    }}
+                />
             </View>
         </SafeAreaView>
     )
@@ -17,7 +26,5 @@ const HomeScreen = () => {
 export default HomeScreen
 
 const styles = StyleSheet.create({
-    text: {
-        color: "red",
-    },
-});
+
+})
