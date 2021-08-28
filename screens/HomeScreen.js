@@ -1,6 +1,7 @@
 import React from 'react'
 import { Image, SafeAreaView, StyleSheet, View } from 'react-native'
 import tw from "tailwind-react-native-classnames";
+import NavOptions from '../components/NavOptions';
 
 //rnfes--Shortcut for React Native Functional component with Stylesheet
 //https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/2560px-Uber_logo_2018.svg.png
@@ -18,6 +19,8 @@ const HomeScreen = () => {
                         uri: "https://links.papareact.com/gzs",
                     }}
                 />
+
+                <NavOptions />
             </View>
         </SafeAreaView>
     )
