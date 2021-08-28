@@ -6,6 +6,7 @@ import NavOptions from '../components/NavOptions';
 //rnfes--Shortcut for React Native Functional component with Stylesheet
 //https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/2560px-Uber_logo_2018.svg.png
 const HomeScreen = () => {
+
     return (
         <SafeAreaView style={tw`bg-white h-full`}>
             <View style={tw`p-5`}>
